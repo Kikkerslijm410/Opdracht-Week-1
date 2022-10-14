@@ -10,9 +10,9 @@ public class Pad : Tekenbaar{
     }
     
     public void TekenConsole(ConsoleTekener t){
-        for (int i = 0; i < (int)Lengte(); i++)
+        for (var i = 0; i < (int)Lengte(); i++)
         {
-            float factor = i / Lengte();
+            var factor = i / Lengte();
             t.SchrijfOp(new Coordinaat((int)Math.Round(van.x + (naar.x - van.x) * factor), (int)Math.Round(van.y + (naar.y - van.y) * factor)), "#");
         }
         t.SchrijfOp(new Coordinaat((int)Math.Round(van.x + (naar.x - van.x) * .5), (int)Math.Round(van.y + (naar.y - van.y) * .5)), (1000 * Lengte()).metSuffixen());

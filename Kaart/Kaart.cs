@@ -7,8 +7,9 @@ public class Kaart{
         this.Hoogte = h;
     }
 
+    //useless method because the map gets drawn by other methods
     public void Teken (Tekener t){
-        //useless method because the map gets drawn by other methods
+        var oppervlak = Breedte * Hoogte;
     }
 
     public void VoegItemToe (KaartItem item){
