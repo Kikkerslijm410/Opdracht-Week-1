@@ -3,6 +3,7 @@ public class Pad : Tekenbaar{
     public Coordinaat van { get; set; }
     public Coordinaat naar { get; set; }
     private float? lengteBerekend;
+
     public float Lengte(){
         if (!lengteBerekend.HasValue)
             lengteBerekend = (float)Math.Sqrt((van.x - naar.x) * (van.x - naar.x) + (van.y - naar.y) * (van.y - naar.y));

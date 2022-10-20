@@ -6,17 +6,23 @@ public class Kaart{
         this.Breedte = b;
         this.Hoogte = h;
     }
+    public List <Pad> paden = new List<Pad>();
+    public List <KaartItem> items = new List<KaartItem>();
 
-    //useless method because the map gets drawn by other methods
     public void Teken (Tekener t){
-        var oppervlak = Breedte * Hoogte;
+        foreach(KaartItem item in items){
+            item.TekenConsole(new ConsoleTekener());
+        }
+        foreach(Pad pad in paden){
+            pad.TekenConsole(new ConsoleTekener());
+        }
     }
 
     public void VoegItemToe (KaartItem item){
-        item.TekenConsole(new ConsoleTekener());
+        items.Add(item);
     }
 
     public void VoegPadToe (Pad pad){
-        pad.TekenConsole(new ConsoleTekener());
+        paden.Add(pad);
     }
 }

@@ -13,6 +13,7 @@ public class Program{
         k.VoegItemToe(new Attractie(k, new Coordinaat(15, 15)));
         k.VoegItemToe(new Attractie(k, new Coordinaat(20, 15)));
         k.VoegItemToe(new Attractie(k, new Coordinaat(5, 18)));
+        k.Teken(new ConsoleTekener());
         new ConsoleTekener().SchrijfOp(new Coordinaat(0, k.Hoogte + 1), "Deze kaart is schaal 1:1000");
         System.Console.Read();
     }
