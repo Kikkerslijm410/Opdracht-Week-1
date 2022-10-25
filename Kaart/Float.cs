@@ -1,9 +1,9 @@
 namespace Pretpark;
 public static class Float{
     /*
-    *   Deze klasse bevat een aantal methodes die Floats kunnen vergelijken.
-    *   Deze methodes zijn nodig omdat floats niet exact zijn en dus niet altijd
-    *   hetzelfde zijn.
+    *   Deze klasse bevat een methode die Floats vergelijkt.
+    *   Deze methode is nodig omdat elke groep floats een andere
+    *   letter moet teruggeven
     */
     public static String metSuffixen(this float f){
         if (f < 1000) return Math.Round(f,1).ToString() + "";

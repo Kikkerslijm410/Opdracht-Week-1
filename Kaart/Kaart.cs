@@ -10,10 +10,10 @@ public class Kaart{
     public List <KaartItem> items = new List<KaartItem>();
 
     public void Teken (Tekener t){
-        foreach(KaartItem item in items){
+        foreach(var item in items){
             item.TekenConsole(new ConsoleTekener());
         }
-        foreach(Pad pad in paden){
+        foreach(var pad in paden){
             pad.TekenConsole(new ConsoleTekener());
         }
     }
