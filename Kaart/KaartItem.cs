@@ -8,7 +8,7 @@ public abstract class KaartItem{
         locatie = Locatie;
         ItemList.Add(this);
     }
-    public void TekenConsole (ConsoleTekener t){
-        t.SchrijfOp(locatie, Karakter.ToString());
+    public void TekenConsole (ConsoleTekener tekener){
+        tekener.SchrijfOp(locatie, Karakter.ToString());
     }
 }
