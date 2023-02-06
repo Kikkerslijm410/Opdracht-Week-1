@@ -8,4 +8,8 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Pretpark
+<<<<<<< HEAD
 build_property.ProjectDir = c:\School\Projecten\Opdracht-Week-1\
+=======
+build_property.ProjectDir = d:\School\Visual Studio Code\Opdracht-Week-1\
+>>>>>>> 0c979ea9c0adeb5126f60ca2c1459d64b6ee66c9
